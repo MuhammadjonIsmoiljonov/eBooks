@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+
+<body>
+      <main>
+            <div class="book-section-container">
+                  <!-- Must Read Books -->
+                  <div class="book-section section-a">
+                        <h2>Must Read</h2>
+                        <div class="card-wraper">
+                              <div class="card">
+                                    <img src="img/books/a.jpg" alt="Book" srcset="img/books/a.jpg" />
+                                    <h3>Giant Days</h3>
+                                    <p>by John Allison</p>
+                                    <a class="btn btn-primary" href="detail.html">Read More</a>
+                              </div>
+                              <div class="card">
+                                    <img src="img/books/b.jpg" alt="Book" srcset="img/books/b.jpg" />
+                                    <h3>To Be Taught, If Fortunate</h3>
+                                    <p>by Becky Chambers</p>
+                                    <a class="btn btn-primary" href="detail.html">Read More</a>
+                              </div>
+                              <div class="card">
+                                    <img src="img/books/c.jpg" alt="Book" srcset="img/books/c.jpg" />
+                                    <h3>Bitch Planet</h3>
+                                    <p>by Kelly Sue DeConnick</p>
+                                    <a class="btn btn-primary" href="detail.html">Read More</a>
+                              </div>
+                              <div class="card">
+                                    <img src="img/books/d.jpg" alt="Book" srcset="img/books/d.jpg" />
+                                    <h3>Paper Girls</h3>
+                                    <p>by Brian K. Vaughan</p>
+                                    <a class="btn btn-primary" href="detail.html">Read More</a>
+                              </div>
+                              <div class="card">
+                                    <img src="img/books/e.jpg" alt="Book" srcset="img/books/e.jpg" />
+                                    <h3>A Terrible Plan</h3>
+                                    <p>by Noelle Stevenson, Shannon Watters</p>
+                                    <a class="btn btn-primary" href="detail.html">Read More</a>
+                              </div>
+                        </div>
+                  </div>
+      </main>
+      <style>
+            :root {
+                  --primary-color: #cd0506;
+                  --secondary-color: #e12b2be3;
+                  --book-section: #ebe9e9;
+                  --button-primary: #1a8510;
+            }
+
+            main {
+                  background: var(--book-section);
+            }
+
+            main .book-section-container {
+                  margin: auto;
+                  padding-bottom: 30px;
+                  background: var(--book-section);
+                  height: 100%;
+                  border: 1px solid transparent;
+                  width: 95%;
+            }
+
+            main .book-section-container .book-section {
+                  margin-top: 30px;
+            }
+
+            main .book-section-container .book-section h2 {
+                  font-size: 1.6rem;
+            }
+
+            main .book-section-container .book-section .card-wraper {
+                  margin-top: 15px;
+                  display: -ms-grid;
+                  display: grid;
+                  -ms-grid-columns: (1fr, 4);
+                  grid-template-columns: repeat(4, 1fr);
+            }
+
+            main .book-section-container .book-section .card-wraper .card {
+                  background: #fff;
+                  width: 240px;
+                  margin: 10px 10px;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  padding: 10px;
+            }
+
+            main .book-section-container .book-section .card-wraper .card img {
+                  width: 80%;
+                  height: 200px;
+            }
+
+            main .book-section-container .book-section .card-wraper .card h3 {
+                  margin-top: 15px;
+                  font-size: 100%;
+            }
+
+            main .book-section-container .book-section .card-wraper .card p {
+                  font-size: 90%;
+                  margin-top: 10px;
+            }
+
+            main .book-section-container .book-section .card-wraper .card .btn-primary {
+                  background: var(--button-primary);
+                  color: #fff;
+                  margin-top: 20px;
+                  height: 35px;
+                  width: 100px;
+            }
+
+            main .book-section-container .book-section .card-wraper .card .btn-primary:hover {
+                  background: #fff;
+                  color: var(--button-primary);
+                  border: 1px solid var(--button-primary);
+            }
+      </style>
+</body>
+
+</html>

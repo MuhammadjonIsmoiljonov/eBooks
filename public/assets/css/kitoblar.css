@@ -1,0 +1,90 @@
+
+:root {
+      --primary-color: #cd0506;
+      --secondary-color: #e12b2be3;
+      --book-section: #ebe9e9;
+      --button-primary: #1a8510;
+    }
+
+main {
+      background: var(--book-section);
+    }
+    
+    main .book-section-container {
+      margin: auto;
+      padding-bottom: 30px;
+      background: var(--book-section);
+      height: 100%;
+      border: 1px solid transparent;
+      width: 95%;
+    }
+    
+    main .book-section-container .book-section {
+      margin-top: 30px;
+    }
+    
+    main .book-section-container .book-section h2 {
+      font-size: 1.6rem;
+    }
+    
+    main .book-section-container .book-section .card-wraper {
+      margin-top: 15px;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr, 4);
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    main .book-section-container .book-section .card-wraper .card {
+      background: #fff;
+      width: 240px;
+      margin: 10px 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    main .book-section-container .book-section .card-wraper .card img {
+      width: 80%;
+      height: 200px;
+    }
+    
+    main .book-section-container .book-section .card-wraper .card h3 {
+      margin-top: 15px;
+      font-size: 100%;
+    }
+    
+    main .book-section-container .book-section .card-wraper .card p {
+      font-size: 90%;
+      margin-top: 10px;
+    }
+    
+    main .book-section-container .book-section .card-wraper .card .btn-primary {
+      background: var(--button-primary);
+      color: #fff;
+      margin-top: 20px;
+      height: 12%;
+      width: 70%;
+    }
+    
+    main
+      .book-section-container
+      .book-section
+      .card-wraper
+      .card
+      .btn-primary:hover {
+      background: #fff;
+      color: var(--button-primary);
+      border: 1px solid var(--button-primary);
+    }

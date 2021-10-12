@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sang Kutubxonasi</title>
+  <link rel="stylesheet" href="../assets/css/register.css">
+</head>
+
+<body>
+  <form action="/create" enctype="multipart/form-data" method="post">
+
+    <h1>Yangi kitob qo'shish</h1>
+
+    <fieldset>
+      <label for="name">Kitob nomi:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="author">Kitob muallifi:</label>
+      <input type="text" id="author" name="author" required>
+
+      <label for="file">Kitobning rasmi:</label>
+      <input type="file" id="file" name="file" required>
+      <br>
+
+      <!-- <label class="pdf" for="file">Kitobni yuklash:</label>
+      <input type="file" id="pdf" name="pdf" required> -->
+    </fieldset>
+
+
+    <button type="submit">Submit</button>
+  </form>
+  <style>
+    .pdf {
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+
+    fetch("/create", {
+      method: "post",
+      body: new FormData(document.querySelector("form")),
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        // "Content-Type": "multipart/form-data",
+      },
+
+    }).then(res => console.log(res)).catch(err => console.log(err))
+
+  </script>
+</body>
+
+</html>
